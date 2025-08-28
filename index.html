@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor - Portfólio</title>
+    <!-- Atalho para chamar a tag meta:desc -->
+    <meta name="description" content="Portfólio Victor">
+    <!-- favicon -->
+    <link rel="favicon.ico" href="favicon.ico" type="image/x-icon">
+    <!-- link para chamar os icons do bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./src/assets/css/style.css"> -->
+    <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+    <style>
+        * {
+            color: black;
+            padding: 0;
+            margin: 0;
+            vertical-align: baseline;
+            list-style: none;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: grey;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .list__header {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        header {
+            /* fixa no topo */
+            position: fixed;
+            top: 0;
+            left: 0;
+            /* ocupa a largura toda */
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-between; /* logo à esquerda, menu à direita */
+            align-items: center;
+            padding: 10px 20px;
+            /* fica acima do conteúdo */
+            z-index: 1000;
+        }
+
+        main {
+            /* evita que o conteúdo fique atrás do header fixo */
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo__header">
+            logo
+        </div>
+            <nav>
+                <ul class="list__header">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><i class="bi bi-circle-half"></i></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Desenvolvendo soluções inteligentes.</h1>
+        </section>
+        
+        <section id="about">
+            <h2>Sobre</h2>
+            <p>Me chamo Victor, este portfólio ilustra alguns projetos que desenvolvi para documentar a minha trajetória
+            inicial de estudos com HTML e CSS.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Projetos</h2>
+        <ul>
+            <li>
+                <a href="https://vmalagrino.github.io/dio-challenge-html/" target="_blank">Documentar tags HTML</a>
+                <a href="https://vmalagrino.github.io/dio-challenge-wikipedia/" target="_blank">Recriando a Wikipedia</a>
+                <a href="https://vmalagrino.github.io/dio-challenge-css-01/" target="_blank">Landing page - Trilha CSS</a>
+                <a href="https://vmalagrino.github.io/dio-challenge-css-02/" target="_blank">recriando o YouTube</a>
+                <a href="https://vmalagrino.github.io/dio-challenge-css-03/" target="_blank">landing page Discord</a>
+            </li>
+        </ul>
+        </section>
+        
+        <section id="contact">
+            <h2>Contato</h2>
+            <div class="social">
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-github"></i>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
